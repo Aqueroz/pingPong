@@ -88,7 +88,7 @@ function mostraRaquete(x, y){
 function movimentoRaqueteOponente()
  {
    velocidadeYOponente = yBolinha - yRaquete - yRaqueteOponente - raqueteComprimento / 2 - 30;
-   yRaqueteOponente += velocidadeYBolinha
+   yRaqueteOponente += velocidadeYBolinha;
    calculaChanceDeErrar();
  }
 
@@ -155,26 +155,26 @@ function bolinhaNaoFicaPresa()
   {xBolinha - 23}
 }
 
-// function calculaChanceDeErrar()
-// {
-//   if(pontosOponente >= meusPontos)
-//   {
-//     chanceDeErrar += 1;
-//     if (chanceDeErrar >= 39)
-//     {
-//       chanceDeErrar = 40
-//     }
-//   }
-//   else 
-//   {
-//     chanceDeErrar -= 1;
-//     if (chanceDeErrar <= 35)
-//     {
-//       chanceDeErrar = 35
-//     }
-//   }
+ function calculaChanceDeErrar()
+ {
+   if(pontosOponente >= meusPontos)
+   {
+     chanceDeErrar += 1;
+     if (chanceDeErrar >= 39)
+     {
+       chanceDeErrar = 40
+     }
+   }
+   else 
+   {
+     chanceDeErrar -= 1;
+     if (chanceDeErrar <= 35)
+     {
+       chanceDeErrar = 35
+     }
+   }
 
-// }
+ }
 
 //function preload()
 // trilha = loadSound ("local.mp3")

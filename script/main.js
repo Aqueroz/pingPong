@@ -89,7 +89,7 @@ function movimentoRaqueteOponente()
  {
    velocidadeYOponente = yBolinha - yRaquete - yRaqueteOponente - raqueteComprimento / 2 - 30;
    yRaqueteOponente += velocidadeYBolinha
-    calculaChanceDeErrar()
+   calculaChanceDeErrar();
  }
 
 function movimentoMinhaRaquete()

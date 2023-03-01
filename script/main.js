@@ -73,24 +73,24 @@ function mostraRaquete(x, y){
 }
 
 
-function movimentoRaqueteOponente()
-{
-  if (keyIsDown(UP_ARROW))
-  {
-    yRaqueteOponente -= 10;
-  }
-  if (keyIsDown(DOWN_ARROW))
-    {
-      yRaqueteOponente += 10;
-    }
-}
-
 //function movimentoRaqueteOponente()
-// {
-//   velocidadeYOponente = yBolinha - yRaquete - yRaqueteOponente - raqueteComprimento / 2 - 30;
-//   yRaqueteOponente += velocidadeYBolinha
-//   // calculaChanceDeErrar()
-// }
+//{
+//  if (keyIsDown(UP_ARROW))
+//  {
+//    yRaqueteOponente -= 10;
+//  }
+//  if (keyIsDown(DOWN_ARROW))
+//    {
+//      yRaqueteOponente += 10;
+//    }
+//}
+
+function movimentoRaqueteOponente()
+ {
+   velocidadeYOponente = yBolinha - yRaquete - yRaqueteOponente - raqueteComprimento / 2 - 30;
+   yRaqueteOponente += velocidadeYBolinha
+    calculaChanceDeErrar()
+ }
 
 function movimentoMinhaRaquete()
 {
